@@ -112,12 +112,3 @@ function errorHandler(error) {
 app.listen(3000, function(){
     console.log("Server started on port 3000");
 });
-
-
-// const express = require('express')
-// const app = express()
-// app.all('/', (req, res) => {
-//     console.log("Just got a request!")
-//     res.send('Yo!')
-// })
-// app.listen(process.env.PORT || 3000)

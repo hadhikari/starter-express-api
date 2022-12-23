@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(33,33,33);
+        }
+
+       
+
+
+        .undertaking_form{
+            text-align: center;
+        }
+
+        .input-group {
+        position: relative;
+        }
+
+        .input {
+        
+        border: solid 1.5px #9e9e9e;
+        border-radius: 0.4rem;
+        background: none;
+        padding: 0.4rem;
+        width: 30rem;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 0.8rem;
+        color: #f5f5f5;
+        transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+        }
+
+        .user-label {
+        
+        position: absolute;
+        font-size: 0.9rem;
+        
+        left: 245px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: rgb(232,232,232);
+        pointer-events: none;
+        transform: translateY(0.5rem);
+        transition: 150ms cubic-bezier(0.4,0,0.2,1);
+        }
+
+        .input:focus, input:valid {
+        outline: none;
+        border: 1.5px solid #1a73e8;
+        }
+
+        .input:focus ~ label, input:valid ~ label {
+        transform: translateY(-50%) scale(0.8);
+        background-color: #212121;
+        padding: 0 .2em;
+        color: #2196f3;
+        }
+
+        button {
+ height: 3em;
+ width: 8em;
+ border: none;
+ border-radius: 10em;
+ background: #016DD9;
+ font-size: 17px;
+ color: #ffffff;
+ font-family: inherit;
+ font-weight: 500;
+}
+
+button:hover {
+ animation: shake3856 0.3s linear infinite both;
+}
+
+@keyframes shake3856 {
+ 0% {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+ }
+
+ 20% {
+  -webkit-transform: translate(-2px, 2px);
+  transform: translate(-2px, 2px);
+ }
+
+ 40% {
+  -webkit-transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px);
+ }
+
+ 60% {
+  -webkit-transform: translate(2px, 2px);
+  transform: translate(2px, 2px);
+ }
+
+ 80% {
+  -webkit-transform: translate(2px, -2px);
+  transform: translate(2px, -2px);
+ }
+
+ 100% {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+ }
+}
+
+    </style>
+</head>
+<body>
+    <form class="undertaking_form" action="/" method="post">
+        
+        <div class="input-group">
+            <input class="input" required="" type="text" id="tag-TAG1" name="{manufacturer_name}">
+            <label class="user-label" for="tag-TAG1">Manufacturer Name</label>
+        </div>
+        <br>
+        <div  class="input-group">
+            <input class="input" style="width: 36%;height: 100px;" required="" type="text" id="tag-TAG2" name="{manufacturer_address}"  >
+            <!-- <textarea class="input" rows="4" cols="50" name="{manufacturer_address}" form="usrform">
+                </textarea> -->
+            <label class="user-label" for="tag-TAG2">Manufacturer Address</label>
+        </div>
+        <br>
+        <div class="input-group">
+            <input class="input" required="" type="text" id="tag-TAG3" name="{product_name}">
+            <label class="user-label" for="tag-TAG3">Product Name</label>
+        </div>
+        <br>
+        <div class="input-group">
+            <input class="input" required="" type="text" id="tag-TAG4" name="{brand_name}">
+            <label class="user-label" for="tag-TAG3">Brand Name</label>
+        </div>
+        <br>
+        <div class="input-group">
+            <input class="input" required="" type="text" id="tag-TAG5" name="{is_standard}">
+            <label class="user-label" for="tag-TAG3">IS Standard</label>
+        </div>
+        <br>
+        <div class="input-group">
+            <input class="input" required="" type="text" id="tag-TAG6" name="{model_no}">
+            <label class="user-label" for="tag-TAG3">Model No.</label>
+        </div>
+        <br>
+        <div class="input-group">
+            <input class="input" required="" type="text" id="tag-TAG7" name="{lab_name}">
+            <label class="user-label" for="tag-TAG3">Lab Name</label>
+        </div>
+        <br>
+        <div class="input-group">
+            <input class="input" required="" type="text" id="tag-TAG8" name="{report_no}">
+            <label class="user-label" for="tag-TAG3">Report No.</label>
+        </div>
+        <br>
+        <div class="input-group">
+            <input class="input" required="" type="text" id="tag-TAG9" name="{report_date}">
+            <label class="user-label" for="tag-TAG3">Report Date</label>
+        </div>
+        <br>
+        <div class="input-group">
+            <input class="input" required="" type="text" id="tag-TAG10" name="{ir_name}">
+            <label class="user-label" for="tag-TAG3">IR Name</label>
+        </div>
+        <br>
+        <button type="submit" value="Submit"> Shake </button>
+        <!-- <input type="submit" value="Submit"> -->
+      </form> 
+      <br>
+      
+</body>
+</html>
